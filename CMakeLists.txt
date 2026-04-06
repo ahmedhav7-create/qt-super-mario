@@ -5,5 +5,5 @@ find_package(Boost REQUIRED COMPONENTS filesystem)
 
 set(CMAKE_AUTOMOC ON)
 
-add_executable(my_app main.cpp player.hpp)
+add_executable(my_app player.hpp)
 target_link_libraries(my_app PRIVATE Boost::filesystem)
