@@ -1,9 +1,13 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.21)
+
 project(Assign2)
 
-find_package(Boost REQUIRED COMPONENTS filesystem)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 
 set(CMAKE_AUTOMOC ON)
 
-add_executable(my_app player.hpp)
-target_link_libraries(my_app PRIVATE Boost::filesystem)
+add_executable(my_app src/main.cpp src/player.cpp include/player.hpp)
+
+target_include_directories(my_app PRIVATE include)
+target_include_directories(my_app PRIVATE src)
+target_link_libraries(my_app PRIVATE Qt6::Core)
