@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+project(Assign2)
+
+find_package(Boost REQUIRED COMPONENTS filesystem)
+
+set(CMAKE_AUTOMOC ON)
+
+add_executable(my_app player.hpp)
+target_link_libraries(my_app PRIVATE Boost::filesystem)
