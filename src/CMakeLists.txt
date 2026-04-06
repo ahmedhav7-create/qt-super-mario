@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.21)
 
 project(Assign2)
 
@@ -9,4 +9,4 @@ set(CMAKE_AUTOMOC ON)
 add_executable(my_app main.cpp player.cpp include/player.hpp)
 
 target_include_directories(my_app PRIVATE include)
-target_link_libraries(my_app PRIVATE Qt6::Core)
+target_link_libraries(my_app PRIVATE Qt5::Core)
