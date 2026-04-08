@@ -34,8 +34,14 @@ void Player::updateState() {
   QMessageBox* message = new QMessageBox;
 
   message->setWindowTitle("Game Over");
+
   message->setText("You lost!");
+
+  message->setFixedSize(600, 300);
+
   message->exec();
+
+  return;
 
 }
 
