@@ -1,4 +1,5 @@
 #include "player.hpp"
+#include <QMessageBox>
 
 #include <QBrush>
 
