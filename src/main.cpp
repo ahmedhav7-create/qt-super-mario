@@ -16,10 +16,20 @@ int main(int argc, char* argv[]) {
   Player player;
   scene.addItem(&player);
 
-  QGraphicsRectItem ground(0, 0, 300, 30);
+  QGraphicsRectItem ground(0, 0, 200, 20);
   ground.setBrush(Qt::darkGreen);
-  ground.setPos(100, 250);
+  ground.setPos(400, 240);
   scene.addItem(&ground);
+
+  QGraphicsRectItem ground2(0, 0, 200, 20);
+  ground2.setBrush(Qt::darkGreen);
+  ground2.setPos(200, 150);
+  scene.addItem(&ground2);
+
+  QGraphicsRectItem ground3(0, 0, 200, 20);
+  ground3.setBrush(Qt::darkGreen);
+  ground3.setPos(0, 240);
+  scene.addItem(&ground3);
 
   QGraphicsView view(&scene);
   view.setWindowTitle("Qt Super Mario");
