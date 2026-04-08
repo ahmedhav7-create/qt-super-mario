@@ -41,6 +41,10 @@ void Player::updateState() {
 
   message->exec();
 
+  setPos(300, 0);
+
+  delete message;
+
   return;
 
 }
