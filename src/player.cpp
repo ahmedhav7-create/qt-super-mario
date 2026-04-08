@@ -29,7 +29,7 @@ void Player::updateState() {
   onGround = false;
   moveBy(0, velocityY);
 
-  if (y() < 0){
+  if (y() > 400){
 
   QMessageBox* message = new QMessageBox;
 
